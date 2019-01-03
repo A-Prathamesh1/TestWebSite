@@ -7,6 +7,4 @@ myHeading.textContent = 'Hello world!';
  prompt("WELCOME TO THE WORLD OF JAVASCRIPT")
 //java script array objects
 var  cars = ["Tesla","Mercedez","Lamborgini"];
-array.forEach(element => {
-    document.getElementById("123").innerHTML = cars[0];    
-});
+document.findElementById("test").innerHTML = cars[o];
