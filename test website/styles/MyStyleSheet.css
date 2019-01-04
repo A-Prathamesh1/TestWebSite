@@ -8,3 +8,6 @@ p, li,  body{
   line-height: 2;
   letter-spacing: 1px;
 }
+body {
+  background-image: url("iss.jpg");
+}
