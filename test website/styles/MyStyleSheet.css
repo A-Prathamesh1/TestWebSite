@@ -9,6 +9,6 @@ p, li{
   letter-spacing: 1px;
 }
 body {
-  background :url(images/iss.jpg) no-repeat;
+  background-image: url("images/iss.jpg") no-repeat;
   
 }
