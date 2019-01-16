@@ -1,4 +1,7 @@
 body {
+  background-image: url("images/iss.jpg");
+  background-repeat: repeat, no-repeat;
+  background-color: #cccccc;
   font-size: 30px;
   color: rgba(255, 166, 166, 0.322);
   text-shadow: 0px 0px #000000;
@@ -7,11 +10,17 @@ h1 {
   text-shadow: 0px 0px rgb(124, 84, 84);
   text-align: center;
 }
-
+#wow {
+  font-size: 5in;
+}
 p, li{
   text-shadow: 0px 0px rgb(126, 89, 89);
   text-align: center; 
   font-size: 20x;
   line-height: 2;
   letter-spacing: 1px;
+  }
+  img { 
+    width: 30%; 
+    height: 30%;
   }

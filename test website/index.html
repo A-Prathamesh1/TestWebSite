@@ -7,16 +7,96 @@
     <title>My test page</title>
   </head>
   <body>
+    All the material on this page is highly contageous be aware and needs review, all constructive comments are welcome! 
     <h1>This is body.</h1>
-    <p>This is html paragraph</p>
+    <p><a title="git link" href="https://a-prathamesh1.github.io/gitwebsite/test%20website/index.html">This is my git link </p>
+    
     <marquee>THIS IS AWESOME</marquee>
-    <marquee ><H1 id="123">YES!</H1></marquee>
+    <marquee id="wow"><H1 id="123">YES!</H1></marquee>
     <h2>Selenium Automation with Java</h2>
+    Java gives us Maven <textarea rows="5" cols="70">C:\Users\prath\Documents\Job\MyProject1>java -version
+      java version "1.8.0_191"
+      Java(TM) SE Runtime Environment (build 1.8.0_191-b12)
+      Java HotSpot(TM) 64-Bit Server VM (build 25.191-b12, mixed mode)</textarea>
+
+      Build Cycle: Maven build
+      To check ehat vesion of maven installed
+      <textarea rows="8" cols="100">C:\Users\prath>mvn --version
+        Apache Maven 3.6.0 (97c98ec64a1fdfee7767ce5ffb20918da4f719f3; 2018-10-24T11:41:47-07:00)
+        Maven home: C:\Users\prath\Downloads\apache-maven-3.6.0-bin\apache-maven-3.6.0\bin\..
+        Java version: 1.8.0_181, vendor: Oracle Corporation, runtime: C:\Program Files\Java\jdk1.8.0_181\jre
+        Default locale: en_US, platform encoding: Cp1252
+        OS name: "windows 10", version: "10.0", arch: "amd64", family: "windows"</textarea>
+
       <p><h3>Using Maven</h3>: Dependacy management tool, since various commercial companies organization,
        enterprise software venture developes platform independent applications, to access libraries jars and packages(knowledge) stored functions acts as accumulator,
        remote server maintains latest code repository of artifacts that can be downloaded as per the platform. 
-       Build Cycle: Maven build
+
+        Maven build cycle, how to make a test run on jenkins when test fails on jenkin becase there is an element that can not be loaded.
+        Maven downloads the latest jars and other files I need selenium testNG logging and cucumber Junit to set up environment of testing web services, UI automation environment.
+        So my manager data analyst developer we all decide to stay organised with framework to efficiently use of fetures of language such as reusability, extendibility. 
+
+        Since we all belong to an commercial enterprise coming up with some a Time service which tells everything about you. 
+        Group name is "spacetimecomplexity" short can be space time to identify project uniquely, everything is art so hard work will result in artifact we call that artifact as my-app.
+
+        So group is used to identify the project uniquely, com.timespace.app artifact ID- my-app, version 0.1(major.feature.patch).
+        since we are using maven project it provides Junit unit testing framework by default.
+
+        So if some one with source code of whatever function in whatever domain for whatever may be the problem, can be tested for accurecy unitwise or one function at time.
+        is unit testing good for code coverage? Code coverage: Number of lines whos pourpose and output is being tested. its a dumb metric to evaluate tests quality, since just by maximizing the number of code lines being tested doesn't convey anything besides everyline in code is executing.
+        Even if we check the code function by function, there will be situatons in commercial projects that dosent convey the expected results. So reasons may be different.(TDD vs BDD).
+
+        Some developers approch Test Driven Development, they first write a failing test for function and once test fails they revisit function and inspect what needs to be modified for correct ouput.
+        Following this decipline dosent give much thought to how service is behaving and the rest can be read at BDD cucumber.  
+        Where emphasis is given on the behaviour verification of the developement.   
+
+        Command to generate maven repository with some details is: Its better to isolate this in separate folder as my app. 
+        
+        Once changed in to that folder, using CLI get this done. It downloads the latest junit repo, alogwith necessary files.
+        
+        <textarea rows="3" cols="100">mvn archetype:generate -DgroupId=com.mycompany.app -DartifactId=my-app -DarchetypeArtifactId=maven-archetype-quickstart -DarchetypeVersion=0.1 -DinteractiveMode=false</textarea>
+        
+        This command has generated project structure for my-app artifact of com.mycompany.app group(/domain more on this soon). version 0.1.
+        now cd my app will give you first glimpse of your project object model POM.xml containing configuraion of project.
+        On command prompt you see the projects structure by tree command. 
+        So the mvn acrhetype:generate creats the hierarchy of folders and files. 
+        you can also see the jar files we have in Java Runtime Environment 1.8 and the maven provides junit frame work for unit testing.
+        our archetype my-app is configured in pom.xml 
+        <img src="images/pom-structure.png"  title="project_object_model_screenshot" alt="pom">
+      
+        <img src="images/eclipse_pom_structure.png" title="project_object_model_screenshot_eclipse" alt="pom">
+        
+        
+        <textarea rows="22" cols="100"><project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+          <modelVersion>4.0.0</modelVersion>
+        
+          <groupId>com.trail</groupId>
+          <artifactId>maven-demo</artifactId>
+          <version>0.0.1-SNAPSHOT</version>
+          <packaging>jar</packaging>
+        
+          <name>maven-demo</name>
+          <url>http://maven.apache.org</url>
+        
+          <properties>
+            <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+          </properties>
+        
+          <dependencies>
+            <dependency>
+              <groupId>junit</groupId>
+              <artifactId>junit</artifactId>
+              <version>3.8.1</version>
+              <scope>test</scope>
+            </dependency>
+          </dependencies>
+        </project>
+        </textarea>
+        Here xml file contains the meta data encoded in to xensible markup language. Its used to share data about data that is configurations. Which is exchaged over the network, so when we configure our test to be run on jenkins we provide jenkins with the pom.xml of our project,
+        which it uses to build the entire project.         
       </p>   
+      
       <p>
         <h3>TestNG</h3>:
          Testing Next Generation by Cedric Buest, Data driven testing framework. 
@@ -150,4 +230,56 @@ Test cases can be developed usign another language such as python with selenium 
       </tr><br>
     </table>
   </body>
+  Jan 12 2019: Interview with congnizant, Selenium Where do we use method overloading and overrriding in java, 
+   Page Object model: 
+   BDD: How to glue step definitions and features ?
+   How to write steps definions for the login scenario ? 
+   Glue code ? 
+     
+
+   How would you make that test run.
+   pom.xml 
+   groupID 
+   equals vs ==
+   exception handelling
+   abstact class vd interface. 
+   <table>
+     <tr><th>Abstract Class</th><th>Java Interface</th></tr>
+     <tr><td>Class that must be extended by multiple related child classes</td><td>Interface of service is implimented by one or more unrelated classes</td></tr>
+     <tr><td>Java dosent support multiple inheritance so one child can have only one parent, java is old school.</td><td>A class can impliment as many interfaces as it want.</td></tr>
+     <tr></tr>
+   </table>
+   hashtable vs hashmap
+   Dyanmic waits in selenium.
+   how would you use tr and td while retriving information on the.
+   How to access the superclasses constructor from chils class. 
+   TDD and BDD, Data Driven, Behaviour driven.
+   frame handelling using selenium.
+   Mutatable vs immutable : 
+  <h2>String Vs. StringBuffer Vs. StringBuilder</h2>
+  Wonder are the instances of the class interconvertible. like string to stringbuilder to stringbuffer and vice versa.
+  <table>
+    <tr><th>String</th><th>StringBuffer</th><th>String Builder</th></tr>
+    <tr>
+    <td>String special token sequence of characters.
+      <textarea rows="1" cols="30">String name = "Prathamesh";</textarea>
+    </td>
+    <td>String Buffer reads the stream of characters.</td>
+    <td>Strig builder mutable non thread friendly.</td>
+    </tr>
+    <tr>
+      <td>Concatenation of String <textarea rows="1" cols="15">String S + S.</textarea></td>
+      <td>sb.append</td>
+      <td>sb.</td>
+    </tr>
+    <tr>
+      <td>name.size()</td>
+      <td>name.length</td>
+      <td>name.length()</td>
+    </tr>
+    <tr>
+      <td></td>
+    </tr>
+  </table>
+
 </html>
