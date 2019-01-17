@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            C the memory
+        </title>
+        <link rel="stylesheet" href="images/"></styles>
+    </head>
+    <body>
+        <h1>This webpage is decided for my C studies in order to visusalize the memory in terms of heap and stack</h1>
+        Computers main memory RAM Random Access Memories <img src="images/daft-punk-grammy.jpg" height="100px" width="100px">
+
+        When source code is written access to variables and functions is specifoed by the scope the time and location up till when the field is usable.
+        fields whos access is modified from default public to protected are accessible only until the one immediate child class. private fields are accessible in the same class only.
+        public field are globally available whoever can employ the classs object. This is represented using syntax by using keywords public, private, protected, and paranthesis pairs. 
+
+        During the execution flow of the program main() deamon calls the other threads. 
+        program must be starting execution by providing access to fields and functions to neccessary thread. 
+
+        so while parsing for the <textarea cols="50" rows="30" >
+            #include<!-- <"stdio.h">-->
+
+            int debug =1;
+            char s[] = "Hello World";
+            const char* string = "Hello World!"
+            final int debug =1;
+            /*
+            These are global fields available and modifiable(r/w) by every function.
+            const/ final fields are in gloabal read-only. Character pointer read/write and "Hello world" is stored in read-only.  
+            */
+
+            All uninitialisd variables are stored in 
+            void main(){
+            /*
+            1GHz, Single-core CPU
+            512MB RAM
+            Mini HDMI and USB On-The-Go ports
+            Micro USB power
+            HAT-compatible 40-pin header
+            Composite video and reset headers
+            CSI camera connector
+            802.11n wireless LAN
+            Bluetooth 4.0
+            */
+                printf("Hello World!");
+                /*
+                int : 4 bytes
+                int debug = 1
+                char : 1 byte
+                char s[] = "Hello World";
+                float : 4 byte
+                double : 8 byte
+                long long : 8 byte
+                string : ??? 4*8 bytes
+                */
+                int i,k, *ip;
+                ip = &i;
+                i =100;
+                k=*ip;
+                k= k +2 ;
+                i = *(&k);
+                *(&k) = 200;
+                
+            }</textarea>
+
+            This will execute the main methods first, printf will print Hello World! 
+            Before that, since entire code will be stored in numbered memory locations in the form blocks
+            functions. 
+
+            Usually, DDR3 16 GB RAM is what we see. Apart from these there are chache's, flash and other hierachically arranged memories that get you access to the resources of varrying size with varryring serving time.
+            Since featching and locating takes time. frames are stacked and unstacked on heap and stack. 
+            Executable source code is file object in memory. 
+            These instrcution in memory are read only, to prevent modify itself.
+            Global/static variables: Data Segment: Not read only since variables changes runtime.
+            These variables when initializsed can be classified in to read-only fields, and read-write fields.
+            When I say field does it mean from start location to end location? 
+
+            Static data in c is used to limit the scope or access to that data only for the members of file. or se
+
+            In java static can be variable, method, block, Nested Class and it's one copy in the read-write area is shared by all the objects unless the field is final in addition to static.
+
+            <table>
+                <tr><th> C field Static</th><th>Static field java</th></tr>
+                <tr><td>static field in c preserves its value within scope/ it shares its value among multiple calls.</td>
+                    <td>Static field in java preserves its value among multiple objects.</td>
+                </tr>
+            </table>
+            both in java and c statics are global variables.
+            So data seg will contain read-only and read-write fields whos value is retained by every single instance or intermedate multiple calls.
+
+    </body>
+
+</html>
