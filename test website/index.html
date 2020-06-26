@@ -228,9 +228,9 @@ Test cases can be developed usign another language such as python with selenium 
       <tr>
         <td>Scan using nextInt() next(), nextLine(), hasNext(), </td>
       </tr><br>
+  
     </table>
-  </body>
-  Jan 12 2019: Interview with congnizant, Selenium Where do we use method overloading and overrriding in java, 
+    Jan 12 2019: Interview with congnizant, Selenium Where do we use method overloading and overrriding in java, 
    Page Object model: 
    BDD: How to glue step definitions and features ?
    How to write steps definions for the login scenario ? 
@@ -281,5 +281,36 @@ Test cases can be developed usign another language such as python with selenium 
       <td></td>
     </tr>
   </table>
+<div>
+  <textarea rows="10" cols="50"></textarea>
+</div>
+    <b>Rolando Suggested studies feb 21 2019</b>
+  Undestanding the String and chars using java Buffer and Stream.
+  UTF-8 is accepted by all the M/C, how to understand the binary data in our program depends on where exactly we are reading it from. 
+  File, Buffer, console so we need to recognize what type of data wheather primitive, formatted text, byte stream or object. This will decide what stream class to use to recognize the data. 
+  So it depends on may be M/C architecture designer or application writer how to interprete 8 bits coming in some stream. 
+
+  With newline character \n is used in linux, and \r\n is used by windows, all can use \n to get to the new line.
+
+  FileInputStream vs FileReader
+
+  As name suggest if the file needs to be read as a sequence of bytes we need InputStreamReader/Writer as it's generic input stream reader. 
+  however in case of FileReader/Writer it's meant for reading text or text file as input.
+
+  After byte stream whenever byte stream needs to be converted in to any higher level data type, the higher level data type acts as a wrapper. 
+  and transation of stream to higher data type (Wrapping) is handelled by higher data type. 
+  For Example: Here, we need to convert input byte stream as sequence of characters. So, as soon as we receive byte stream at the socket, it can be bridged and read as Output/InputStreamReader.
+
+  <textarea>
+    public static void main(String[] args){
+        
+    }
+  </textarea>
+  Testing last modified.
+  HTML special characters: < = &lt;, > = &gt;, " = &quot; ' = &apos; @ = &amp;
+
+  
+
 
 </html>
+

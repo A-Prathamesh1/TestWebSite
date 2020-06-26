@@ -1,0 +1,23 @@
+p {
+  color: red;
+}
+h1 {
+  color: blue;
+}
+/* body {
+  background-image: url("iron-man-4800x2160-artwork-hd-4k-10573.jpg");
+  background-repeat: repeat-x;
+  background-repeat: repeat-y;
+  background-position: right-top;
+  background-attachment: scroll;
+} */
+body {
+  background: url() no-repeat scroll right top;
+}
+p.myclass {
+  border-width: 5px;
+  border-top-style: solid;
+  border-bottom-style: dotted;
+  border-left-style: dashed;
+  border-radius: 15px;
+}

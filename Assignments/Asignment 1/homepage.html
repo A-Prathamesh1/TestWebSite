@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="myfirststylesheet.css" type="text/css" />
+  </head>
+  <body style="background-color: linen;">
+    <form target="/myjs.js">
+      <fieldset>
+        <legend>Personal Details</legend>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" /><br /><br />
+        <label for="male">Male:</label>
+        <input type="radio" id="male" name="male" />&nbsp;
+        <label for="female">Female:</label>
+        <input type="radio" id="female" name="female" /><br /><br />
+        <label for="state">State:</label>
+        <select id="state" name="state" size="1">
+          <option value="MH">MH</option>
+          <option value="KA">KA</option>
+          <option value="AP">AP</option>
+          <option value="MH">MH</option>
+          <option value="KA">KA</option>
+          <option value="AP">AP</option>
+          <option value="MH">MH</option>
+          <option value="KA">KA</option>
+          <option value="AP">AP</option>
+          <option value="MH">MH</option>
+          <option value="KA">KA</option>
+          <option value="AP">AP</option>
+        </select>
+        <br /><br />
+        <fieldset oninput="x.value=2020-parseInt(year.value)">
+          <legend>Age</legend>
+          <label for="year" name="year">Current Year</label>
+          <select id="year" size="1">
+            <optgroup label="early90's">
+              <option value="1989">1989</option>
+              <option value="1988">1988</option>
+              <option value="1987">1987</option>
+              <option value="1988">1988</option>
+            </optgroup>
+            <optgroup label="after90's">
+              <option value="1990">1990</option>
+              <option value="1991">1991</option>
+              <option value="1992">1992</option>
+              <option value="1993">1993</option>
+              <option value="1994">1994</option>
+              <option value="1995">1995</option>
+            </optgroup> </select
+          ><br /><br />
+          Your age is:
+          <output name="x" for="year"></output>
+        </fieldset>
+        <fieldset>
+          <legend>Feedback:</legend>
+          <textarea name="Feedback" style="width: 670px; height: 100px;">
+        
+Edit this!    
+      </textarea
+          >
+        </fieldset>
+        <br />
+        What is your favorite browser ?
+        <input list="browser" name="browser" />
+        <datalist id="browser">
+          <option value="FF"> </option>
+          <option value="CH"> </option>
+          <option value="IE"> </option>
+          <option value="OP"> </option>
+        </datalist>
+        <br /><br />
+        <button type="submit">Submit!</button>
+      </fieldset>
+      <br /><br />
+
+      <fieldset id="inputypes">
+        <legend>Input Types</legend>
+
+        <label for="favcolor">Enter your fav Color</label>
+        <input type="color" name="favcolor" id="favcolor" />
+        <br />
+        <label for="dateinput">Enter your date of birth</label>
+        <input
+          type="date"
+          name="dateinput"
+          id="dateinput"
+          min="1950-01-01"
+          max="2020-04-07"
+        />
+        <br />
+        <label for="datelimiter">Enter date before 2000-01-01</label>
+        <input type="datetime-local" name="datelimiter" id="datelimiter" />
+        <br />
+        <label for="Official-email">Enter email</label>
+        <input type="email" id="Official-email" name="Official-email" />
+        <br />
+        <label for="input-file">Attach file here:</label>
+        <input type="file" id="input-file" name="input-file" />
+        <br />
+        <label for="month-input">Enter month:</label>
+        <input type="month" name="month" id="month" />
+        <br />
+        <label for="test-chk-box">This is loaded checkbox</label>
+        <input type="checkbox" name="test-chk-box" id="test-chk-box" disabled />
+        <br />
+        <label for="random-text">Enter text:</label>
+        <input type="text" maxlength="9" />
+        <br />
+        <h1>HTML attributes</h1>
+        <label for="salary">salary:</label>
+        <input type="number" name="salary" id="salary" value="100000" /><br />
+        <label for="price">Price</label>
+        <input type="number" name="price" id="price" value="1100" readonly />
+        <br />
+        <label for="time">Enter the planet you live on</label><br />
+        <input type="text" disabled value="Earth" /><br />
+        <label for="phone">Enter phone number</label>
+        <input
+          type="tel"
+          size="10"
+          pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+          placeholder="999-999-9999"
+          required
+          autofocus
+        /><br />
+        <label for="reg-ex">Enter a number in date format YYYY-MM-DD</label>
+        <button type="submit">Done!</button>&nbsp&nbsp<input
+          type="submit"
+          formaction="myjs2.js"
+          value="submit as admin"
+        />
+        <input type="sumbit" formenctype="myjs3.js" value="submit" />
+      </fieldset>
+    </form>
+
+    <h1>HTML Color tutorial</h1>
+    <h1 style="color: yellow;">Yellow</h1>
+    <h1 style="background-color: tomato;">tomato</h1>
+    <h1 style="background-color: #282990;">Blue with hex</h1>
+    <h1 style="background-color: rgba(28, 29, 90, 0.8);">Blue with rgb()</h1>
+    
+    </style="background-image:>
+    <h1 style="background-position: 0px;"></h1>
+
+    <p class="myclass">This is myclass style demo</br>
+                       This is myclass style demo</br>
+                This is myclass style demo</br>
+      This is myclass style demo</br>
+      This is myclass style demo</br>
+      This is myclass style demo</br>
+    </p>
+
+    <style>
+        .serif {
+          font-family: serif;                    
+        }
+        .sansseriffamily {
+          font-family: sans-serif;          
+        }
+        .monospacefamily {
+          font-family: monospace;          
+        }
+    </style>
+    <p class="serif"> serif </p>
+    <p class="sansseriffamily"> sans-serif </p>
+    <p class="monospacefamily"> monospace </p>
+    
+    <style>
+      .italiclass {
+        font-style:italic;
+      }
+      .normalclass {
+        font-family: normal;
+        font-size: 5vw;
+      }
+      .boldclass {
+        font-family: bold;
+        font-size: 15em;
+      }
+    </style>
+    <p>
+      <h1 class="italiclass">Italic</h1>
+      <h1 class="normalclass">normal</h1>
+      <h1 class="boldclass">bold</h1>
+    <!-- </p>
+    <style>
+      p {
+        display: none;
+        background-color: yellow;
+        padding: 20px;
+      }
+      
+      div:hover p {
+        display: block;
+      }
+      </style>
+      
+      <body>
+      
+      <div>Hover over me to show the p element
+        <p>Tada! Here I am!</p>
+      </div>
+     -->
+     
+      <style>    
+            
+            p {
+                display:none;
+                padding:10px;
+            }
+            div:hover p {
+                    display:block;
+                    color:yellow;
+            }
+         
+        </style>
+        
+        <div> 
+            hover to see tooltip <p>  this is tooltip </p> <div>
+
+<style>
+   p:first-child {
+    color: green;    
+  }
+</style>
+
+<p>this is first child</p>
+<p>this is second</p>
+
+  </body>
+</html>
