@@ -30,6 +30,11 @@
         float: left;
         border: 1px solid red;
       }
+      .row::after {
+        display: table;
+        clear: both;
+        content: "";
+      }
       .col-1 {
         width: 8.33%;
       }
@@ -65,11 +70,6 @@
       }
       .col-12 {
         width: 100%;
-      }
-      .row::after {
-        display: table;
-        clear: both;
-        content: "";
       }
     </style>
   </head>
